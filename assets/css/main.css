@@ -2463,16 +2463,16 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Section
+# articles Section
 --------------------------------------------------------------*/
-.portfolio .portfolio-filters {
+.articles .articles-filters {
   padding: 0 0 20px 0;
   margin: 0 auto;
   list-style: none;
   text-align: center;
 }
 
-.portfolio .portfolio-filters li {
+.articles .articles-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 0;
@@ -2483,40 +2483,40 @@ section,
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
+.articles .articles-filters li:hover,
+.articles .articles-filters li.filter-active {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-filters li:first-child {
+.articles .articles-filters li:first-child {
   margin-left: 0;
 }
 
-.portfolio .portfolio-filters li:last-child {
+.articles .articles-filters li:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
+  .articles .articles-filters li {
     font-size: 14px;
     margin: 0 5px;
   }
 }
 
-.portfolio .portfolio-content {
+.articles .articles-content {
   background-color: var(--surface-color);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   height: 100%;
   overflow: hidden;
 }
 
-.portfolio .portfolio-content img {
+.articles .articles-content img {
   transition: 0.3s;
   position: relative;
   z-index: 1;
 }
 
-.portfolio .portfolio-content .portfolio-info {
+.articles .articles-content .articles-info {
   background-color: var(--background-color);
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   padding: 25px 20px;
@@ -2524,29 +2524,29 @@ section,
   z-index: 2;
 }
 
-.portfolio .portfolio-content .portfolio-info h4 {
+.articles .articles-content .articles-info h4 {
   font-size: 18px;
   font-weight: 600;
   padding-right: 50px;
 }
 
-.portfolio .portfolio-content .portfolio-info h4 a {
+.articles .articles-content .articles-info h4 a {
   color: var(--heading-color);
   transition: 0.3s;
 }
 
-.portfolio .portfolio-content .portfolio-info h4 a:hover {
+.articles .articles-content .articles-info h4 a:hover {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-content .portfolio-info p {
+.articles .articles-content .articles-info p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   font-size: 14px;
   margin-bottom: 0;
   padding-right: 50px;
 }
 
-.portfolio .portfolio-content:hover img {
+.articles .articles-content:hover img {
   transform: scale(1.1);
 }
 
@@ -3059,24 +3059,24 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details Section
+# articles Details Section
 --------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
+.articles-details .articles-details-slider img {
   width: 100%;
 }
 
-.portfolio-details .swiper-wrapper {
+.articles-details .swiper-wrapper {
   height: auto;
 }
 
-.portfolio-details .swiper-button-prev,
-.portfolio-details .swiper-button-next {
+.articles-details .swiper-button-prev,
+.articles-details .swiper-button-next {
   width: 48px;
   height: 48px;
 }
 
-.portfolio-details .swiper-button-prev:after,
-.portfolio-details .swiper-button-next:after {
+.articles-details .swiper-button-prev:after,
+.articles-details .swiper-button-next:after {
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(0, 0, 0, 0.15);
   font-size: 24px;
@@ -3089,36 +3089,36 @@ section,
   transition: 0.3s;
 }
 
-.portfolio-details .swiper-button-prev:hover:after,
-.portfolio-details .swiper-button-next:hover:after {
+.articles-details .swiper-button-prev:hover:after,
+.articles-details .swiper-button-next:hover:after {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 575px) {
 
-  .portfolio-details .swiper-button-prev,
-  .portfolio-details .swiper-button-next {
+  .articles-details .swiper-button-prev,
+  .articles-details .swiper-button-next {
     display: none;
   }
 }
 
-.portfolio-details .swiper-pagination {
+.articles-details .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details .swiper-pagination .swiper-pagination-bullet {
+.articles-details .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
 
-.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
+.articles-details .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
-.portfolio-details .portfolio-info h3 {
+.articles-details .articles-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -3126,7 +3126,7 @@ section,
   position: relative;
 }
 
-.portfolio-details .portfolio-info h3:after {
+.articles-details .articles-info h3:after {
   content: "";
   position: absolute;
   display: block;
@@ -3137,26 +3137,26 @@ section,
   bottom: 0;
 }
 
-.portfolio-details .portfolio-info ul {
+.articles-details .articles-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li {
+.articles-details .articles-info ul li {
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
 }
 
-.portfolio-details .portfolio-info ul strong {
+.articles-details .articles-info ul strong {
   text-transform: uppercase;
   font-weight: 400;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 14px;
 }
 
-.portfolio-details .portfolio-info .btn-visit {
+.articles-details .articles-info .btn-visit {
   padding: 8px 40px;
   background: var(--accent-color);
   color: var(--contrast-color);
@@ -3164,28 +3164,28 @@ section,
   transition: 0.3s;
 }
 
-.portfolio-details .portfolio-info .btn-visit:hover {
+.articles-details .articles-info .btn-visit:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
-.portfolio-details .portfolio-description h2 {
+.articles-details .articles-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.articles-details .articles-description p {
   padding: 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item {
+.articles-details .articles-description .testimonial-item {
   padding: 30px 30px 0 30px;
   position: relative;
   background: color-mix(in srgb, var(--default-color), transparent 97%);
   margin-bottom: 50px;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .testimonial-img {
+.articles-details .articles-description .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50px;
   border: 6px solid var(--background-color);
@@ -3193,33 +3193,33 @@ section,
   margin: 0 10px 0 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item h3 {
+.articles-details .articles-description .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 15px 0 5px 0;
   padding-top: 20px;
 }
 
-.portfolio-details .portfolio-description .testimonial-item h4 {
+.articles-details .articles-description .testimonial-item h4 {
   font-size: 14px;
   color: #6c757d;
   margin: 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
+.articles-details .articles-description .testimonial-item .quote-icon-left,
+.articles-details .articles-description .testimonial-item .quote-icon-right {
   color: color-mix(in srgb, var(--accent-color), transparent 50%);
   font-size: 26px;
   line-height: 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-left {
+.articles-details .articles-description .testimonial-item .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
+.articles-details .articles-description .testimonial-item .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
@@ -3227,7 +3227,7 @@ section,
   transform: scale(-1, -1);
 }
 
-.portfolio-details .portfolio-description .testimonial-item p {
+.articles-details .articles-description .testimonial-item p {
   font-style: italic;
   margin: 0 0 15px 0 0 0;
   padding: 0;
@@ -3796,16 +3796,16 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio 2 Section
+# articles 2 Section
 --------------------------------------------------------------*/
-.portfolio-2 .portfolio-filters {
+.articles-2 .articles-filters {
   padding: 0 0 20px 0;
   margin: 0 auto;
   list-style: none;
   text-align: center;
 }
 
-.portfolio-2 .portfolio-filters li {
+.articles-2 .articles-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 0;
@@ -3816,40 +3816,40 @@ section,
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio-2 .portfolio-filters li:hover,
-.portfolio-2 .portfolio-filters li.filter-active {
+.articles-2 .articles-filters li:hover,
+.articles-2 .articles-filters li.filter-active {
   color: var(--accent-color);
 }
 
-.portfolio-2 .portfolio-filters li:first-child {
+.articles-2 .articles-filters li:first-child {
   margin-left: 0;
 }
 
-.portfolio-2 .portfolio-filters li:last-child {
+.articles-2 .articles-filters li:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575px) {
-  .portfolio-2 .portfolio-filters li {
+  .articles-2 .articles-filters li {
     font-size: 14px;
     margin: 0 5px;
   }
 }
 
-.portfolio-2 .portfolio-content {
+.articles-2 .articles-content {
   background-color: var(--surface-color);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   height: 100%;
   overflow: hidden;
 }
 
-.portfolio-2 .portfolio-content img {
+.articles-2 .articles-content img {
   transition: 0.3s;
   position: relative;
   z-index: 1;
 }
 
-.portfolio-2 .portfolio-content .portfolio-info {
+.articles-2 .articles-content .articles-info {
   background-color: var(--background-color);
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   padding: 25px 20px;
@@ -3857,29 +3857,29 @@ section,
   z-index: 2;
 }
 
-.portfolio-2 .portfolio-content .portfolio-info h4 {
+.articles-2 .articles-content .articles-info h4 {
   font-size: 18px;
   font-weight: 600;
   padding-right: 50px;
 }
 
-.portfolio-2 .portfolio-content .portfolio-info h4 a {
+.articles-2 .articles-content .articles-info h4 a {
   color: var(--heading-color);
   transition: 0.3s;
 }
 
-.portfolio-2 .portfolio-content .portfolio-info h4 a:hover {
+.articles-2 .articles-content .articles-info h4 a:hover {
   color: var(--accent-color);
 }
 
-.portfolio-2 .portfolio-content .portfolio-info p {
+.articles-2 .articles-content .articles-info p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   font-size: 14px;
   margin-bottom: 0;
   padding-right: 50px;
 }
 
-.portfolio-2 .portfolio-content:hover img {
+.articles-2 .articles-content:hover img {
   transform: scale(1.1);
 }
 
@@ -4179,4 +4179,339 @@ section,
 
 .contact-2 .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+:root {
+      --primary: #1a4f72;
+      --secondary: #2c7da0;
+      --accent: #468faf;
+      --light: #e6f7ff;
+      --dark: #012a4a;
+      --success: #2e8b57;
+      --warning: #ffc107;
+      --danger: #dc3545;
+      --info: #17a2b8;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      line-height: 1.7;
+    }
+    
+    .articles-details-page {
+      background: #f8f9fa;
+    }
+    
+    .articles-description {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+      overflow: hidden;
+      padding: 2.5rem;
+      border-top: 4px solid var(--primary);
+    }
+    
+    .articles-description h1 {
+      font-size: 2.3rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+      line-height: 1.3;
+    }
+    
+    .articles-description .lead {
+      font-size: 1.15rem;
+      color: #555;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .articles-description h4 {
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--light);
+      position: relative;
+    }
+    
+    .articles-description h4:after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 60px;
+      height: 2px;
+      background: var(--primary);
+    }
+    
+    .articles-info, .recent-posts {
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      background: white;
+      padding: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .articles-info h3, .recent-posts h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid #f0f0f0;
+    }
+    
+    .highlight-box {
+      background: var(--light);
+      border-left: 4px solid var(--primary);
+      padding: 1.5rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5rem 0;
+    }
+    
+    .quote-box {
+      background: #f8f9fa;
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      color: #555;
+    }
+    
+    .cta-box {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 2.5rem 0 1rem;
+      box-shadow: 0 10px 30px rgba(26, 79, 114, 0.2);
+    }
+    
+    .cta-box p {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+    }
+    
+    .cta-box .fw-bold {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .finance-concept {
+      background: #f9fbfd;
+      border: 1px solid #e0e7ff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      position: relative;
+    }
+    
+    .concept-title {
+      position: absolute;
+      top: -12px;
+      left: 20px;
+      background: white;
+      padding: 0 10px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    
+    .feature-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: var(--light);
+      color: var(--primary);
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    
+    .error-list {
+      background: #fff8f8;
+      border-left: 4px solid var(--danger);
+      padding: 1.5rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5rem 0;
+    }
+    
+    .error-list p {
+      margin-bottom: 0.5rem;
+      position: relative;
+      padding-left: 30px;
+    }
+    
+    .error-list p:before {
+      content: "❌";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      color: var(--danger);
+    }
+    
+    .article-image {
+      width: 100%;
+      border-radius: 10px;
+      margin: 1.5rem 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .infographic {
+      background: #f0f8ff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      text-align: center;
+      border: 1px dashed var(--accent);
+    }
+    
+    .infographic-title {
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    
+    .infographic-content {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    
+    .infographic-item {
+      width: 30%;
+      min-width: 150px;
+      margin: 10px;
+      padding: 15px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+    
+    .infographic-icon {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    
+    .author-signature {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #eee;
+    }
+    
+    .author-signature img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 15px;
+      border: 2px solid var(--light);
+    }
+    
+    .author-info h5 {
+      margin-bottom: 0;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    
+    .author-info p {
+      margin-bottom: 0;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    
+    @media (max-width: 768px) {
+      .articles-description {
+        padding: 1.5rem;
+      }
+      
+      .articles-description h1 {
+        font-size: 1.8rem;
+      }
+      
+      .infographic-item {
+        width: 45%;
+      }
+    }
+
+    /* Infografis Style */
+.infographic {
+  background: #f0f8ff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: center;
+  border: 1px dashed var(--accent);
+}
+
+.infographic-title {
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.infographic-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infographic-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.infographic-item {
+  width: 50%;
+  padding: 20px 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.infographic-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-top: 3px solid var(--accent);
+}
+
+.infographic-icon {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.infographic-item h5 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.infographic-item p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .infographic-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .infographic-item {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }

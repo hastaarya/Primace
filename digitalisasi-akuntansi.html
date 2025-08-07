@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Digitalisasi Akuntansi: Mengapa Bisnis Anda Harus Beralih ke Sistem Akuntansi Online</title>
+  <meta name="description" content="Temukan manfaat digitalisasi akuntansi bagi bisnis Anda, rekomendasi tools terbaik, dan peran konsultan dalam transisi ke sistem berbasis cloud">
+  <meta name="keywords" content="digitalisasi akuntansi, software akuntansi, akuntansi online, sistem akuntansi cloud, transformasi digital bisnis">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo/Logo_pac-transparent.png" rel="icon">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #1a4f72;
+      --secondary: #2c7da0;
+      --accent: #468faf;
+      --light: #e6f7ff;
+      --dark: #012a4a;
+      --success: #2e8b57;
+      --warning: #ffc107;
+      --danger: #dc3545;
+      --info: #17a2b8;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      line-height: 1.7;
+    }
+    
+    .articles-details-page {
+      background: #f8f9fa;
+    }
+    
+    .articles-description {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+      overflow: hidden;
+      padding: 2.5rem;
+      border-top: 4px solid var(--primary);
+    }
+    
+    .articles-description h1 {
+      font-size: 2.3rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+      line-height: 1.3;
+    }
+    
+    .articles-description .lead {
+      font-size: 1.15rem;
+      color: #555;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .articles-description h4 {
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--light);
+      position: relative;
+    }
+    
+    .articles-description h4:after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 60px;
+      height: 2px;
+      background: var(--primary);
+    }
+    
+    .articles-info, .recent-posts {
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      background: white;
+      padding: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .articles-info h3, .recent-posts h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid #f0f0f0;
+    }
+    
+    .highlight-box {
+      background: var(--light);
+      border-left: 4px solid var(--primary);
+      padding: 1.5rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5rem 0;
+    }
+    
+    .quote-box {
+      background: #f8f9fa;
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      color: #555;
+    }
+    
+    .cta-box {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 2.5rem 0 1rem;
+      box-shadow: 0 10px 30px rgba(26, 79, 114, 0.2);
+    }
+    
+    .cta-box p {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+    }
+    
+    .cta-box .fw-bold {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .finance-concept {
+      background: #f9fbfd;
+      border: 1px solid #e0e7ff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      position: relative;
+    }
+    
+    .concept-title {
+      position: absolute;
+      top: -12px;
+      left: 20px;
+      background: white;
+      padding: 0 10px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    
+    .feature-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: var(--light);
+      color: var(--primary);
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    
+    .error-list {
+      background: #fff8f8;
+      border-left: 4px solid var(--danger);
+      padding: 1.5rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5rem 0;
+    }
+    
+    .error-list p {
+      margin-bottom: 0.5rem;
+      position: relative;
+      padding-left: 30px;
+    }
+    
+    .error-list p:before {
+      content: "❌";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      color: var(--danger);
+    }
+    
+    .article-image {
+      width: 100%;
+      border-radius: 10px;
+      margin: 1.5rem 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .infographic {
+      background: #f0f8ff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      text-align: center;
+      border: 1px dashed var(--accent);
+    }
+    
+    .infographic-title {
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    
+    .infographic-content {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    
+    .infographic-item {
+      width: 30%;
+      min-width: 150px;
+      margin: 10px;
+      padding: 15px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+    
+    .infographic-icon {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    
+    .author-signature {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #eee;
+    }
+    
+    .author-signature img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 15px;
+      border: 2px solid var(--light);
+    }
+    
+    .author-info h5 {
+      margin-bottom: 0;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    
+    .author-info p {
+      margin-bottom: 0;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    
+    .benefit-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 100%;
+    }
+    
+    .benefit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .benefit-card .card-header {
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      color: white;
+      font-weight: 600;
+      padding: 15px;
+      border: none;
+    }
+    
+    .benefit-card .card-body {
+      padding: 20px;
+    }
+    
+    .tools-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .tools-list li {
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      background: #f9f9f9;
+      border-left: 4px solid var(--accent);
+      transition: all 0.3s ease;
+    }
+    
+    .tools-list li:hover {
+      background: #f0f7ff;
+      transform: translateX(5px);
+    }
+    
+    .tools-list li h5 {
+      margin-bottom: 5px;
+      color: var(--primary);
+    }
+    
+    .timeline {
+      position: relative;
+      padding-left: 30px;
+      margin: 2rem 0;
+    }
+    
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background: var(--accent);
+    }
+    
+    .timeline-item {
+      position: relative;
+      margin-bottom: 30px;
+    }
+    
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -24px;
+      top: 8px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 3px solid white;
+      box-shadow: 0 0 0 2px var(--primary);
+    }
+    
+    .timeline-content {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+    
+    .stat-card {
+      text-align: center;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      margin: 10px 0;
+    }
+    
+    .stat-card .number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+    
+    .stat-card .label {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    
+    @media (max-width: 768px) {
+      .articles-description {
+        padding: 1.5rem;
+      }
+      
+      .articles-description h1 {
+        font-size: 1.8rem;
+      }
+      
+      .infographic-item {
+        width: 45%;
+      }
+    }
+  </style>
+</head>
+
+<body class="articles-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html#hero" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo/Logo_pac-transparent-with-text.png" alt="logo" width="100" height="100">
+        <h1 class="sitename" style="margin-left: 25px; margin-top: 10px;"><span>PT Prima Akuntansi <br> Cemerlang</span></h1>
+      </a>
+      <nav id="navmenu" class="navmenu">  
+        <ul>
+          <li><a href="index.html#hero" class="active">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li class="dropdown"><a href="index.html#services"><span>Our Services</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="index.html#services">Accounting & Bookkeeping Services</a></li>
+              <li><a href="index.html#services">Tax Services</a></li>
+              <li><a href="index.html#services">Financial & Business Consulting</a></li>
+              <li><a href="index.html#services">Training & Workshops</a></li>
+              <li><a href="index.html#services">Company Incorporation & Licensing</a></li>
+              <li><a href="index.html#services">Custom Packages Available</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#articles">Articles</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section id="articles-details" class="articles-details section">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-between gy-4 mt-4">
+          <!-- Artikel Utama -->
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="articles-description">
+              <!-- Judul dengan ikon -->
+              <div class="d-flex align-items-center mb-3">
+                <div class="feature-icon">
+                  <i class="bi bi-cloud-arrow-up"></i>
+                </div>
+                <h1>Digitalisasi Akuntansi: Mengapa Bisnis Anda Harus Beralih ke Sistem Akuntansi Online</h1>
+              </div>
+              
+              <p class="lead">
+                Di era digital seperti sekarang, cara perusahaan mengelola keuangan telah berubah drastis. 
+                Jika dulu pembukuan dilakukan secara manual dengan buku besar atau spreadsheet, kini semakin 
+                banyak bisnis beralih ke sistem akuntansi online berbasis cloud. 
+                <strong>Transformasi ini bukan hanya tren, tetapi kebutuhan agar bisnis tetap kompetitif, 
+                efisien, dan akurat dalam pengelolaan keuangan.</strong>
+              </p>
+              
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
+                   alt="Digital Accounting" class="article-image">
+              
+              <!-- Apa Itu -->
+              <h4>Apa Itu Digitalisasi Akuntansi?</h4>
+              <p>
+                Digitalisasi akuntansi adalah proses menggantikan metode pencatatan keuangan tradisional 
+                dengan software akuntansi berbasis digital. Sistem ini biasanya disimpan di cloud (awan), 
+                yang memungkinkan akses data keuangan <strong>kapan saja dan dari mana saja</strong>, 
+                asalkan terhubung dengan internet.
+              </p>
+              
+              <div class="highlight-box">
+                <h5 class="d-flex align-items-center">
+                  <i class="bi bi-graph-up-arrow me-2"></i> Statistik Digitalisasi Akuntansi
+                </h5>
+                <div class="row mt-3">
+                  <div class="col-md-4">
+                    <div class="stat-card">
+                      <div class="number">78%</div>
+                      <div class="label">Perusahaan beralih ke sistem cloud</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="stat-card">
+                      <div class="number">42%</div>
+                      <div class="label">Penghematan waktu administrasi</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="stat-card">
+                      <div class="number">67%</div>
+                      <div class="label">Pengurangan kesalahan akuntansi</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Mengapa Harus Beralih -->
+              <h4>Mengapa Harus Beralih ke Sistem Akuntansi Online?</h4>
+              <p>
+                Berikut manfaat utama yang bisa Anda dapatkan dengan menerapkan digitalisasi akuntansi:
+              </p>
+              
+              <div class="row mt-3">
+                <div class="col-md-6 mb-4">
+                  <div class="benefit-card">
+                    <div class="card-header d-flex align-items-center">
+                      <i class="bi bi-clock me-2"></i> Akses Real-Time
+                    </div>
+                    <div class="card-body">
+                      <p>
+                        Dengan sistem berbasis cloud, Anda bisa memantau kondisi keuangan bisnis secara langsung. 
+                        Baik Anda berada di kantor, rumah, atau bahkan sedang traveling, laporan keuangan, neraca, 
+                        atau arus kas dapat diakses hanya dengan beberapa klik.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                  <div class="benefit-card">
+                    <div class="card-header d-flex align-items-center">
+                      <i class="bi bi-lightning me-2"></i> Efisiensi dan Otomatisasi
+                    </div>
+                    <div class="card-body">
+                      <p>
+                        Sistem online biasanya sudah terintegrasi dengan fitur-fitur seperti:
+                        <ul>
+                          <li>Sinkronisasi bank otomatis</li>
+                          <li>Pengiriman invoice digital</li>
+                          <li>Pengingat pembayaran otomatis</li>
+                          <li>Pelacakan pengeluaran dan pemasukan secara otomatis</li>
+                        </ul>
+                        Semua ini menghemat waktu dan mengurangi potensi kesalahan pencatatan secara manual.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                  <div class="benefit-card">
+                    <div class="card-header d-flex align-items-center">
+                      <i class="bi bi-cash-coin me-2"></i> Penghematan Biaya
+                    </div>
+                    <div class="card-body">
+                      <p>
+                        Digitalisasi akuntansi mengurangi kebutuhan akan kertas, tinta, penyimpanan fisik, 
+                        dan tenaga kerja untuk input manual. Selain itu, dengan laporan keuangan yang lebih 
+                        cepat dan akurat, Anda bisa mengambil keputusan bisnis lebih tepat waktu, yang 
+                        berdampak langsung pada efisiensi biaya operasional.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                  <div class="benefit-card">
+                    <div class="card-header d-flex align-items-center">
+                      <i class="bi bi-people me-2"></i> Kolaborasi yang Lebih Mudah
+                    </div>
+                    <div class="card-body">
+                      <p>
+                        Anda bisa memberikan akses ke tim keuangan, mitra bisnis, bahkan akuntan eksternal 
+                        tanpa harus bertukar file lewat email. Sistem ini memungkinkan kolaborasi waktu nyata 
+                        (real-time collaboration), mempercepat proses audit dan pelaporan.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                  <div class="benefit-card">
+                    <div class="card-header d-flex align-items-center">
+                      <i class="bi bi-shield-lock me-2"></i> Keamanan Data
+                    </div>
+                    <div class="card-body">
+                      <p>
+                        Banyak yang masih ragu dengan keamanan data di cloud, padahal penyedia software 
+                        akuntansi terkemuka sudah dilengkapi dengan enkripsi data, sistem backup otomatis, 
+                        dan pengaturan hak akses yang bisa disesuaikan.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Rekomendasi Tools -->
+              <h4>Rekomendasi Tools Akuntansi Populer di Indonesia</h4>
+              <p>
+                Berikut beberapa software akuntansi online yang umum digunakan di Indonesia:
+              </p>
+              
+              <ul class="tools-list">
+                <li>
+                  <h5>Jurnal by Mekari</h5>
+                  <p>Cocok untuk UMKM, fitur lengkap dan user-friendly</p>
+                </li>
+                <li>
+                  <h5>Accurate Online</h5>
+                  <p>Populer di kalangan bisnis menengah, mendukung multi cabang dan multi gudang</p>
+                </li>
+                <li>
+                  <h5>Xero</h5>
+                  <p>Berbasis internasional, cocok untuk bisnis yang memiliki relasi global atau ekspansi luar negeri</p>
+                </li>
+                <li>
+                  <h5>QuickBooks Online</h5>
+                  <p>Banyak digunakan oleh freelancer dan usaha kecil</p>
+                </li>
+              </ul>
+              
+              <!-- Peran Konsultan -->
+              <h4>Peran Konsultan Akuntansi dalam Transisi Digital</h4>
+              <p>
+                Meski terlihat mudah, migrasi dari sistem manual ke sistem digital memerlukan penyesuaian. 
+                Di sinilah peran konsultan akuntansi menjadi penting:
+              </p>
+              
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-content">
+                    <h5>Memilih Software yang Tepat</h5>
+                    <p>Membantu memilih software yang sesuai dengan kebutuhan dan skala bisnis</p>
+                  </div>
+                </div>
+                
+                <div class="timeline-item">
+                  <div class="timeline-content">
+                    <h5>Pelatihan Tim</h5>
+                    <p>Memberikan pelatihan kepada staf keuangan untuk penggunaan optimal</p>
+                  </div>
+                </div>
+                
+                <div class="timeline-item">
+                  <div class="timeline-content">
+                    <h5>Migrasi Data</h5>
+                    <p>Menjamin integrasi data lama ke sistem baru dengan aman dan benar</p>
+                  </div>
+                </div>
+                
+                <div class="timeline-item">
+                  <div class="timeline-content">
+                    <h5>Pengaturan Sistem</h5>
+                    <p>Membantu mengatur sistem pelaporan agar sesuai dengan standar akuntansi dan perpajakan</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Kesimpulan -->
+              <h4>Kesimpulan</h4>
+              <p>
+                Digitalisasi akuntansi bukan hanya sekadar mengikuti tren—ini adalah langkah strategis untuk 
+                meningkatkan efisiensi, keamanan, dan ketepatan dalam pengelolaan keuangan bisnis Anda. 
+                Dengan sistem akuntansi online, Anda bisa mengambil keputusan lebih cepat, menghindari 
+                kesalahan fatal, dan siap menghadapi tantangan bisnis masa kini.
+              </p>
+              
+              <!-- CTA Box -->
+              <div class="cta-box">
+                <p>📌 Sudah saatnya bisnis Anda bertransformasi! Jika Anda masih menggunakan metode manual atau belum yakin harus mulai dari mana:</p>
+                <p class="fw-bold">💼 Tim Prima Akuntansi Cemerlang siap membantu Anda melakukan transisi ke sistem akuntansi online yang lebih modern dan efisien.</p>
+                <p><i class="bi bi-lightbulb me-2"></i> <em>Profesional. Terpercaya. Berdedikasi.</em></p>
+                <a href="#contact" class="btn btn-light mt-2">Konsultasi Gratis Sekarang</a>
+              </div>
+              
+              <!-- Author Signature -->
+              <div class="author-signature">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Author">
+                <div class="author-info">
+                  <h5>Sarah Putri, S.E., M.Ak</h5>
+                  <p>Senior Financial Consultant di PT Prima Akuntansi Cemerlang</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Sidebar -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="articles-info">
+              <h3>ℹ Article Information</h3>
+              <ul class="list-unstyled">
+                <li class="d-flex mb-2">
+                  <i class="bi bi-folder me-2 text-primary"></i>
+                  <strong>Category:</strong> Finance & Technology
+                </li>
+                <li class="d-flex mb-2">
+                  <i class="bi bi-person me-2 text-primary"></i>
+                  <strong>Author:</strong> Prima Akuntansi Cemerlang Team
+                </li>
+                <li class="d-flex mb-2">
+                  <i class="bi bi-calendar me-2 text-primary"></i>
+                  <strong>Published:</strong> 07 August, 2025
+                </li>
+                <li class="d-flex mb-2">
+                  <i class="bi bi-clock me-2 text-primary"></i>
+                  <strong>Reading Time:</strong> 6 minutes
+                </li>
+                <li class="d-flex mb-2">
+                  <i class="bi bi-link-45deg me-2 text-primary"></i>
+                  <strong>Article URL:</strong> 
+                  <a href="https://primaakuntansi.com/digitalisasi-akuntansi.html" target="_blank" class="ms-1">
+                    primaakuntansi.com
+                  </a>
+                </li>
+              </ul>
+
+              <h5 class="mt-4">📤 Share This Article</h5>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://primaakuntansi.com/digitalisasi-akuntansi.html" 
+                  target="_blank" 
+                  class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center" 
+                  style="width:40px; height:40px;">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://primaakuntansi.com/digitalisasi-akuntansi.html" 
+                  target="_blank" 
+                  class="btn btn-info text-white rounded-circle d-flex align-items-center justify-content-center" 
+                  style="width:40px; height:40px;">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://wa.me/?text=Check%20out%20this%20article:%20https://primaakuntansi.com/digitalisasi-akuntansi.html" 
+                  target="_blank" 
+                  class="btn btn-success rounded-circle d-flex align-items-center justify-content-center" 
+                  style="width:40px; height:40px;">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="https://twitter.com/intent/tweet?url=https://primaakuntansi.com/digitalisasi-akuntansi.html&text=Check%20this%20out!" 
+                  target="_blank" 
+                  class="btn btn-dark rounded-circle d-flex align-items-center justify-content-center" 
+                  style="width:40px; height:40px;">
+                  <i class="bi bi-twitter"></i>
+                </a>
+                <a href="mailto:?subject=Interesting Article&body=Read this article: https://primaakuntansi.com/digitalisasi-akuntansi.html" 
+                  class="btn btn-secondary rounded-circle d-flex align-items-center justify-content-center" 
+                  style="width:40px; height:40px;">
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="recent-posts">
+              <h3>📰 Recent Posts</h3>
+              <ul class="list-unstyled">
+                <li class="d-flex mb-3 border-bottom pb-2">
+                  <img src="assets/img/articles/articles-12.webp" alt="Post 1" class="me-3 rounded" width="70" height="70">
+                  <div>
+                    <a href="#" class="fw-bold text-dark d-block">Digitalisasi Akuntansi: Mengapa Bisnis Harus Beralih ke Sistem Online</a>
+                    <small class="text-muted">Aug 1, 2025</small>
+                  </div>
+                </li>
+                <li class="d-flex mb-3 border-bottom pb-2">
+                  <img src="assets/img/articles/articles-6.webp" alt="Post 2" class="me-3 rounded" width="70" height="70">
+                  <div>
+                    <a href="#" class="fw-bold text-dark d-block">Panduan Lengkap Table Manner untuk Acara Formal</a>
+                    <small class="text-muted">Jul 20, 2025</small>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <img src="assets/img/articles/articles-8.webp" alt="Post 3" class="me-3 rounded" width="70" height="70">
+                  <div>
+                    <a href="#" class="fw-bold text-dark d-block">Tips Networking: Meningkatkan Relasi Bisnis</a>
+                    <small class="text-muted">Jul 10, 2025</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="articles-info">
+              <h3>📚 Free Resources</h3>
+              <div class="card mb-3 border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="bi bi-download me-2 text-primary"></i> Checklist Migrasi Digital
+                  </h5>
+                  <p class="card-text">Panduan langkah demi langkah untuk beralih ke sistem akuntansi online</p>
+                  <a href="#" class="btn btn-sm btn-outline-primary">Download</a>
+                </div>
+              </div>
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="bi bi-journal me-2 text-primary"></i> E-Book Software Akuntansi
+                  </h5>
+                  <p class="card-text">Perbandingan tools akuntansi terbaik di Indonesia</p>
+                  <a href="#" class="btn btn-sm btn-outline-primary">Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email" placeholder="Your Email"><input type="submit" value="Subscribe"></div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">PT Prima Akuntansi Cemerlang</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Ruko Pelangi</p>
+            <p>Blok A no. 3, Jakarta 11730</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+62 852-2826-2618</span></p>
+            <p><strong>Email:</strong> <span>info@primaakuntansi.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Accounting and Bookkeeping</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Tax Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Financial & Business Consulting</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Training & Workshops</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Company Incorporation & Licensing</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>Stay updated with our expert tips — follow us today!</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Prima Akuntansi Cemerlang</strong> <span>All Rights Reserved</span></p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
